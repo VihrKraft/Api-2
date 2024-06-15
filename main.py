@@ -15,6 +15,7 @@ def is_bitlink(token, link):
     response = requests.get(url, headers=headers)
     return response.ok
 
+
 def shorten_link(token, link):
     url = 'https://api-ssl.bitly.com/v4/shorten'
     headers = {
